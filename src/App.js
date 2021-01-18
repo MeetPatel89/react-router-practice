@@ -15,8 +15,12 @@ function App() {
         <Route exact path='/'>
           <Home />
         </Route>
+
         <Route exact path='/services'>
           <ServicesList />
+        </Route>
+        <Route path='/services/:serviceId'>
+          <ServicesDetail />
         </Route>
       </Switch>
     </div>
