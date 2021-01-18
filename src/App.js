@@ -1,23 +1,26 @@
 import React from 'react';
-import { Link, Route, Switch } from 'react-router-dom';
+import Header from './Header';
 import Home from './Home';
-import Profile from './Profile';
+import ServicesList from './ServicesList';
+import ServicesDetail from './ServicesDetail';
 
-export default function App() {
+import { Switch, Route } from 'react-router-dom';
+
+function App() {
   return (
     <div>
-      <h1>Hello World!</h1>
-      <Link to='/'>Home</Link>
-      <Link to='/profile'>Profile</Link>
+      <Header />
+
       <Switch>
         <Route exact path='/'>
           <Home />
         </Route>
-        <Route path='/profile'>
-          <Profile />
+        <Route exact path='/services'>
+          <ServicesList />
         </Route>
-        
       </Switch>
     </div>
   );
 }
+
+export default App;

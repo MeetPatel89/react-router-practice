@@ -15,12 +15,7 @@ export default function Profile() {
           <Link to='/profile/settings'>Settings</Link>
         </li>
       </ul>
-      <Route path='/profile/info'>
-        <Info />
-      </Route>
-      <Route path='/profile/settings'>
-        <Settings />
-      </Route>
+     
     </div>
   );
 }
