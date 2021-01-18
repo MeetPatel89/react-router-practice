@@ -8,15 +8,15 @@ export default function App() {
     <div>
       <h1>Hello World!</h1>
       <Link to='/'>Home</Link>
-      <Link to='/profile'>Profile</Link>
+      <Link to='/user'>Profile</Link>
       <Switch>
         <Route exact path='/'>
           <Home />
         </Route>
-        <Route path='/profile'>
+        <Route path='/user'>
           <Profile />
         </Route>
-      </Switch>
+      </Switch> 
     </div>
   );
 }

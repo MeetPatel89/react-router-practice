@@ -6,10 +6,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 ReactDOM.render(
   <Router>
-    <div>
-      <h1>An experiment in using useParams</h1>
-      <Route path="/blogpost/:random"><BlogPost/></Route>
-    </div>
+    <App />
   </Router>,
   document.getElementById('root')
 );
